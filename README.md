@@ -24,3 +24,11 @@ javascript:popw='';Q='';x=document;y=window;if(x.selection)%20{Q=x.selection.cre
 
 modified version of following page
 https://www.makeuseof.com/tag/10-ingenious-bookmarklets-to-make-you-a-google-power-user/
+
+
+ QR This
+
+Add this to your bookmarks:
+```
+javascript:(function()%7Bvar%20url%20%3D%20encodeURI(window.location.href)%3Bvar%20GoogleQrUrl%20%3D%20%22https%3A%2F%2Fchart.googleapis.com%2Fchart%3Fcht%3Dqr%26chl%3D%22%20%2B%20url%20%2B%20%22%26chs%3D400x400%22%3Bwindow.open(GoogleQrUrl%2C%20'_blank')%7D)()
+```
