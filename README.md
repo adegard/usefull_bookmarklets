@@ -32,3 +32,15 @@ Add this to your bookmarks:
 ```
 javascript:(function()%7Bvar%20url%20%3D%20encodeURI(window.location.href)%3Bvar%20GoogleQrUrl%20%3D%20%22https%3A%2F%2Fchart.googleapis.com%2Fchart%3Fcht%3Dqr%26chl%3D%22%20%2B%20url%20%2B%20%22%26chs%3D400x400%22%3Bwindow.open(GoogleQrUrl%2C%20'_blank')%7D)()
 ```
+```
+ Append external js with following and minify it eg https://www.toptal.com/developers/javascript-minifier/
+
+```
+javascript: (function() {
+    var js = document.body.appendChild(document.createElement("script"));
+    js.onerror = function() {
+        alert("Sorry, the script could not be loaded.")
+    };
+    js.src = "js_URL"
+})();
+```
