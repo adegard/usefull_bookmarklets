@@ -227,7 +227,7 @@ this.div.style.left = Math.floor((w - 362) * 10 / 100) + 'px';
 		div.className = "blummymsg";
 		div.style.backgroundColor = "#fff";
 		var m = this.messages[i-1];
-		m += ' <a href="javascript:void(document.getElementById(\'__blummy_msg\').style.display=\'none\')" class="blummygrey">hide msg</a>';
+		m += ' ciao ';
 		div.innerHTML = m;
 		this.div.appendChild(div);
 	},
