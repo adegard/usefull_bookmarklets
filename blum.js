@@ -212,7 +212,7 @@ this.div.style.left = Math.floor((w - 362) * 10 / 100) + 'px';
 	},
 	
 	show_message: function() {
-		var i = Math.floor(Math.random() * this.messages.length + 0.5);
+		//var i = Math.floor(Math.random() * this.messages.length + 0.5);
 		if (i == 0 || 'anon' == 'anon') {
 			return;
 		}
@@ -224,7 +224,7 @@ this.div.style.left = Math.floor((w - 362) * 10 / 100) + 'px';
 		div.style.zIndex = 1;
 		div.className = "blummymsg";
 		div.style.backgroundColor = "#fff";
-		var m = this.messages[i-1];
+		//var m = this.messages[i-1];
 		m += ' ciao ';
 		div.innerHTML = m;
 		this.div.appendChild(div);
