@@ -171,7 +171,7 @@ this.div.appendChild(div);
 var div, div2, img, a;
 div = document.createElement('div');
 div.className = 'copyright';
-div.innerHTML = 'this is <a class="blummyhome" href="https://blummy.com/">blummy</a> (<a class="blummygrey" href="https://blummy.com/config.php?user=anon">config</a>) | &copy; <a class="blummygrey" style="text-decoration: none" href="https://alexander.kirk.at/">a.kirk</a> 2006 | user <b>anon</b>';
+div.innerHTML = 'HELLO';
 
 var a = document.createElement('a');
 a.className = 'blummygrey';
