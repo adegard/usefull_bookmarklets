@@ -72,3 +72,9 @@ Use this bookmarlet to open it without ads and trackigng:
 ```
 javascript:(function()%7Bvar%20url%3Dlocation.href%3B%20var%20regExp%20%3D%20%2F%5E.*((youtu.be%5C%2F)%7C(v%5C%2F)%7C(%5C%2Fu%5C%2F%5Cw%5C%2F)%7C(embed%5C%2F)%7C(watch%5C%3F))%5C%3F%3Fv%3F%3D%3F(%5B%5E%23%26%3F%5D*).*%2F%3B%0Avar%20match%20%3D%20url.match(regExp)%3B%0Avar%20videoid%20%3D%20(match%26%26match%5B7%5D.length%3D%3D11)%3F%20match%5B7%5D%20%3A%20false%3B%0Awindow.open('https%3A%2F%2Fpiped.kavin.rocks%2Fwatch%3Fv%3D'%20%2B%20videoid)%7D)()%3B
 ```
+
+Blum (Bookmarks popover) - example, originaly created by https://blummy.com
+
+```
+javascript:(function()%7Bjavascript%3A%20%3B%0A(function()%20%7B%0A%20%20%20%20var%20l%2C%20s%2C%20d%20%3D%20document%2C%0A%20%20%20%20%20%20%20%20i%2C%20a%20%3D%20function(o)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20d.body.appendChild(o)%0A%20%20%20%20%20%20%20%20%7D%3B%0A%20%20%20%20if%20(d.getElementById('blummy'))%20return%20Blummy.close()%3B%0A%20%20%20%20s%20%3D%20d.createElement('script')%3B%0A%20%20%20%20s.type%20%3D%20'text%2Fjavascript'%3B%0A%20%20%20%20s.src%20%3D%20'https%3A%2F%2Fcdn.rawgit.com%2Fadegard%2Fusefull_bookmarklets%2Fmain%2Fblum2.js'%3B%0A%20%20%20%20a(s)%0A%7D)()%3B%7D)()%3B
+```
