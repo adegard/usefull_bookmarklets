@@ -61,3 +61,14 @@ Copy the text below into your bookmark URL (be sure to substitute your folder ID
 ```
 javascript:(function(){var folder="YOUR FOLDER ID HERE"; var text=""; if(window.getSelection){text=window.getSelection().toString();}else if(document.selection && document.selection.type!="Control"){text=document.selection.createRange().text;}if(prompt("Press Ctrl+C, Enter", "Tags: \n\n"+location.href+"\n\n"+document.title+"\n\n"+text)) window.open('https://docs.google.com/document/create?usp=drive_web&folder='+folder+'&title='+encodeURIComponent(document.title))})()
 ```
+
+
+ Pipe it
+
+
+Want to watch Youtube videos on Piped (Kavn Rocks)?
+Use this bookmarlet to open it without ads and trackigng:
+
+```
+javascript:(function()%7Bvar%20url%3Dlocation.href%3B%20var%20regExp%20%3D%20%2F%5E.*((youtu.be%5C%2F)%7C(v%5C%2F)%7C(%5C%2Fu%5C%2F%5Cw%5C%2F)%7C(embed%5C%2F)%7C(watch%5C%3F))%5C%3F%3Fv%3F%3D%3F(%5B%5E%23%26%3F%5D*).*%2F%3B%0Avar%20match%20%3D%20url.match(regExp)%3B%0Avar%20videoid%20%3D%20(match%26%26match%5B7%5D.length%3D%3D11)%3F%20match%5B7%5D%20%3A%20false%3B%0Awindow.open('https%3A%2F%2Fpiped.kavin.rocks%2Fwatch%3Fv%3D'%20%2B%20videoid)%7D)()%3B
+```
