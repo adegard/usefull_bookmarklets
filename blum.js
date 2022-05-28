@@ -3,7 +3,7 @@ var Blummy = {
 		var link = document.createElement("link");
 		link.rel = "stylesheet";
 		link.type = "text/css";
-		//link.href = "https://blummy.com/blummy.css";
+		link.href = "https://blummy.com/blummy.css";
 		var rootNode = document.documentElement.childNodes[0];
 		if ( '#comment' === rootNode.nodeName ) {
 			rootNode = rootNode.nextSibling;
@@ -65,93 +65,6 @@ div.style.width = '128px';
 div.style.height = '17px';
 
 
-a = document.createElement('a');
-a.href = 'http://www.bandnews.org';
-a.title = 'http://www.bandnews.org';
-a.onmousedown = Blummy.storeSelection;
-a.onclick = Blummy.close;
-a.innerHTML = '';
-if (document.all) {
-a.innerHTML += '<img src="https://blummy.com/icon.php?id=8" alt="Bandnews.org" style="margin-right: 3px; width: 16px; height: 16px" />';
-} else {
-a.innerHTML += '<img src="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAADW5+oAAACxAJxmAAAAANQAsMrPAAAA7QAAAG8AAACyANXn6gDV5ukAADJgAK/KzgDV5+kAAADuAAAzYAAAM2EAwerzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBANDQ0DBwcBAQkOEBAQEBAQEA0NDQ0NDQ0BBxAKEBAQEBAQEA4NBQ0LCw8HBxAQEBAQEBAPCQgIDAgOEA8BBxAQEBAQDgsLCwsLDhAPEAYQDw8KDw4ADAwMCAoKEBAQEA4QEBAQDg8OCg8QEBAQEBAOEBAQEAwMCQAAEBAQEBAQDxAQEBAJDQ0NCBAQEBAQEA8QEBAKDAgIDAAPEBAQEA4QDxAQDwkCCQIJDhAQEBAQEBAQEA4MDAkMDAoQEBAQEBAQEBAODw4KDgoPEBAQEBAQEBAQCgsECwsLDhAQEBAQEBAQEBAPDg4PDxAQEBAQEBAQEBAQEBAPEBAQEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" alt="Bandnews.org" style="margin-right: 3px; width: 16px; height: 16px" />';
-}a.innerHTML += 'Bandnews.org';
-div.appendChild(a);
-this.div.appendChild(div);
-div = document.createElement('div');
-div.id = '__blummy_9_part';
-div.className = 'part';
-div.style.top = '90px';
-div.style.left = '180px';
-div.style.zIndex = 1;
-
-div.style.width = '142px';
-div.style.height = '20px';
-
-a = document.createElement('a');
-a.href = 'javascript:r=\"\";q=Blummy.getSelection();if (document.referrer) r=document.referrer;if (typeof(_ref)!= \"undefined\") r=_ref;Blummy.href(\"http://blogmarks.net/my/new.php\" +\"?title=\" + encodeURIComponent( document.title )+\"&url=\" + encodeURIComponent( location.href )+\"&summary=\" + encodeURIComponent( q )+\"&via=\" + encodeURIComponent( r ));';
-a.title = 'javascript:r=\"\";q=Blummy.getSelection();if (document.referrer) r=document.referrer;if (typeof(_ref)!= \"undefined\") r=_ref;Blummy.href(\"http://blogmarks.net/my/new.php\" +\"?title=\" + encodeURIComponent( document.title )+\"&url=\" + encodeURIComponent( location.href )+\"&summary=\" + encodeURIComponent( q )+\"&via=\" + encodeURIComponent( r ));';
-a.onmousedown = Blummy.storeSelection;
-a.onclick = Blummy.close;
-a.innerHTML = '';
-if (document.all) {
-a.innerHTML += '<img src="https://blummy.com/icon.php?id=9" alt="Add Blogmarks.net" style="margin-right: 3px; width: 16px; height: 16px" />';
-} else {
-a.innerHTML += '<img src="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AA/jfgBTU1MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIAAAAAAAAAAAAAAAAAAAICAgIAAAAAAAAAAAAAAAACAgICAgIAAAAAAAAAAAAAAgICAgICAgIAAAAAAAAAAAICAgICAgICAgIAAAAAAAACAgICAgICAgICAAAAAAAAAgICAgICAgICAgAAAAAAAAICAgICAgICAAAAAAAAAAACAgICAgIDAwAAAAAAAAAAAgICAgMDAwMDAwAAAAAAAAICAwMDAwMDAwMAAAAAAAADAwMDAwMDAwMDAAAAAAAAAwMDAwMDAwMAAAAAAAAAAAMDAwMDAwAAAAAAAAAAAAADAwMDAAAAAAAAAAAAAAAAAwMAAAAAAAAAAAAAAOf/AADh/wAA4H8AAOAfAADgBwAA4AcAAOAHAADgHwAA4B8AAOAHAADgBwAA4AcAAOAfAADgfwAA4f8AAOf/AAA=" alt="Add Blogmarks.net" style="margin-right: 3px; width: 16px; height: 16px" />';
-}a.innerHTML += 'Add Blogmarks.net';
-div.appendChild(a);
-this.div.appendChild(div);
-div = document.createElement('div');
-div.id = '__blummy_13_part';
-div.className = 'part';
-div.style.top = '90px';
-div.style.left = '10px';
-div.style.zIndex = 1;
-
-div.style.width = '51px';
-div.style.height = '18px';
-
-a = document.createElement('a');
-a.href = 'javascript:domain=location.host.replace(/^(.*?)\\.?([a-z0-9-]+.[a-z]+)$/, \'$2\');Blummy.href(\"http://dnsstuff.com/tools/whois.ch?ip=\" + domain)';
-a.title = 'javascript:domain=location.host.replace(/^(.*?)\\.?([a-z0-9-]+.[a-z]+)$/, \'$2\');Blummy.href(\"http://dnsstuff.com/tools/whois.ch?ip=\" + domain)';
-a.onmousedown = Blummy.storeSelection;
-a.onclick = Blummy.close;
-a.innerHTML = '';
-a.innerHTML += 'Whois';
-div.appendChild(a);
-this.div.appendChild(div);
-div = document.createElement('div');
-div.id = '__blummy_14_part';
-div.className = 'part';
-div.style.top = '70px';
-div.style.left = '180px';
-div.style.zIndex = 1;
-
-div.style.width = '138px';
-div.style.height = '24px';
-
-a = document.createElement('a');
-a.href = 'javascript:Blummy.href(\'http://www.bloglines.com/sub/\'+location.href)';
-a.title = 'javascript:Blummy.href(\'http://www.bloglines.com/sub/\'+location.href)';
-a.onmousedown = Blummy.storeSelection;
-a.onclick = Blummy.close;
-a.innerHTML = '';
-if (document.all) {
-a.innerHTML += '<img src="https://blummy.com/icon.php?id=14" alt="Sub with Bloglines" style="margin-right: 3px; width: 16px; height: 16px" />';
-} else {
-a.innerHTML += '<img src="data:image/x-icon;base64," alt="Sub with Bloglines" style="margin-right: 3px; width: 16px; height: 16px" />';
-}a.innerHTML += 'Sub with Bloglines';
-div.appendChild(a);
-this.div.appendChild(div);
-div = document.createElement('div');
-div.id = '__blummy_15_part';
-div.className = 'part';
-div.style.top = '50px';
-div.style.left = '180px';
-div.style.zIndex = 1;
-
-div.style.width = '147px';
-div.style.height = '23px';
 
 a = document.createElement('a');
 a.href = 'javascript:Blummy.href(\'http://rojo.com/add-subscription/?resource=\'+location.href)';
@@ -201,7 +114,7 @@ this.div.style.left = Math.floor((w - 362) * 10 / 100) + 'px';
 		if (l) {
 			l.style.display = 'none';
 		}
-		this.show();		this.show_message();
+		this.show();		//this.show_message();
 					},	
 	scrollPos: function() {
 		if (document.all) {
