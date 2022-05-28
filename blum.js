@@ -3,7 +3,7 @@ var Blummy = {
 		var link = document.createElement("link");
 		link.rel = "stylesheet";
 		link.type = "text/css";
-		link.href = "https://blummy.com/blummy.css";
+		//link.href = "https://blummy.com/blummy.css";
 		var rootNode = document.documentElement.childNodes[0];
 		if ( '#comment' === rootNode.nodeName ) {
 			rootNode = rootNode.nextSibling;
