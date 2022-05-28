@@ -425,13 +425,6 @@ this.div.style.left = Math.floor((w - 362) * 10 / 100) + 'px';
 		return a;
 	},
 	selection: '',
-//	settings: {
-//		'id':'anon','preid':'','auth':'f5f45f2a165d9c952913ec2bdce6eee2','password':'f311e4555e49624b710df108ed4fcb95','email':'','email_challenge':'','email_confirmed':'0','width':'362','height':'130','left':'10','advanced':'0','opacity':'95','display_save':'0','only_moderated':'1','close':'2','favicons':'1','allow_view':'1','close_blummlet':'1','no_httpauth':'0','theme':'0','textcolor':'000','linkcolor':'28d524','bgcolor':'fff','bordercolor':'28d524','css':'','open_wiki':'0','wikiwidth':'200','wikiheight':'80','open_link':'0','last_login':'0000-00-00 00:00:00','ip':'','referer':'','last_used':'0000-00-00 00:00:00','created':'0000-00-00 00:00:00','expires':'0000-00-00 00:00:00','always_bypass_jslint':'0','opacity64':'iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAANbY1E9YMgAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAwSURBVHja7M5BAQAABAQw9E+rwInhsyVYJ9l6NPVMQEBAQEBAQEBAQEBAQEDgBBgAfA0EL5uajmUAAAAASUVORK5CYII='
-//	},
-//	messages: [
-//		"Consider a <a href='https://blummy.com/donate.php'>donation</a> if you like blummy.",
-//		"Turn off the password query at <a href='https://blummy.com/prefs.php'>preferences</a>."
-//	],
 	scrollInterval: null,
 	pos: -1
 };
