@@ -72,7 +72,20 @@ Want to watch Youtube videos on Piped (Kavn Rocks)?
 Use this bookmarlet to open it without ads and trackigng:
 
 ```
-javascript:(function()%7Bvar%20url%3Dlocation.href%3B%20var%20regExp%20%3D%20%2F%5E.*((youtu.be%5C%2F)%7C(v%5C%2F)%7C(%5C%2Fu%5C%2F%5Cw%5C%2F)%7C(embed%5C%2F)%7C(watch%5C%3F))%5C%3F%3Fv%3F%3D%3F(%5B%5E%23%26%3F%5D*).*%2F%3B%0Avar%20match%20%3D%20url.match(regExp)%3B%0Avar%20videoid%20%3D%20(match%26%26match%5B7%5D.length%3D%3D11)%3F%20match%5B7%5D%20%3A%20false%3B%0Awindow.open('https%3A%2F%2Fpiped.kavin.rocks%2Fwatch%3Fv%3D'%20%2B%20videoid)%7D)()%3B
+javascript:(function()%7By%20%3D%20window%3B%0Avar%20url%20%3D%20location.href%3B%0Avar%20regExp%20%3D%20%2F%5E.*((youtu.be%5C%2F)%7C(v%5C%2F)%7C(%5C%2Fu%5C%2F%5Cw%5C%2F)%7C(embed%5C%2F)%7C(watch%5C%3F))%5C%3F%3Fv%3F%3D%3F(%5B%5E%23%26%3F%5D*).*%2F%3B%0Avar%20match%20%3D%20url.match(regExp)%3B%0Avar%20videoid%20%3D%20(match%20%26%26%20match%5B7%5D.length%20%3D%3D%2011)%20%3F%20match%5B7%5D%20%3A%20false%3B%0Apopw%20%20%3D%20%20y.open('https%3A%2F%2Fpiped.kavin.rocks%2Fwatch%3Fv%3D'%20%2B%20videoid%2C%20'pipedit'%2C%20'location%3D0%2Ctitlebar%3D0%2Ctoolbar%3D0%2Cstatus%3D0%2Cwidth%3D680%2Cheight%3D510%2Cresizable%3D0%2Cscrollbars%3D0')%3B%0Aif%20(!document.all)%20T%20%3D%20%20setTimeout('popw.focus()'%2C%2050)%3B%0Avoid(0)%3B%7D)()%3B
+```
+Equivalent to the following JS:
+
+```
+y = window;
+var url = location.href;
+var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+var match = url.match(regExp);
+var videoid = (match && match[7].length == 11) ? match[7] : false;
+popw  =  y.open('https://piped.kavin.rocks/watch?v=' + videoid, 'pipedit', 'location=0,titlebar=0,toolbar=0,status=0,width=680,height=510,resizable=0,scrollbars=0');
+if (!document.all) T =  setTimeout('popw.focus()', 50);
+void(0);
+
 ```
 
 Blum (Bookmarks popover) - variation based of https://blummy.com
