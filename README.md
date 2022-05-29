@@ -64,6 +64,8 @@ javascript:(function(){var folder="YOUR FOLDER ID HERE"; var text=""; if(window.
 
 
  Pipe it
+ 
+ (note: on Firefox you can use this extension: https://github.com/TeamPiped/Piped-Redirects)
 
 
 Want to watch Youtube videos on Piped (Kavn Rocks)?
