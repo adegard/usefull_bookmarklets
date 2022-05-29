@@ -110,3 +110,11 @@ javascript: ;
     a(s)
 })();
 ```
+
+**Speak It**
+
+Selected text TTS
+
+```
+javascript:(function()%7Bvar%20e%3Dnew%20SpeechSynthesisUtterance(window.getSelection())%3B%20speechSynthesis.speak(e)%3B%7D)()%3B
+```
