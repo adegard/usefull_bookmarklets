@@ -1,6 +1,6 @@
 # Usefull bookmarklets
 
- Google Drive Search
+**Google Drive Search**
 
 For a fast way to search Google Drive files, the simple Google Drive bookmarklet just prompts you for the search term. The Google Drive page will then display in your tab with the results. It works exactly like the search box, if you have one, in your toolbar. But, if you want to save some space by removing that search box, you can use this Google Drive  Search bookmarklet instead.
 
@@ -10,7 +10,8 @@ Add this to your bookmarks:
 javascript:q = - + (window.getSelection ? window.getSelection() : document.getSelection ? document.getSelection() : document.selection.createRange().text); if (!q) q = prompt("Search terms? ... ", ""); if (q!=null) location="https://drive.google.com/drive/search?q=" + escape(q).replace(/ /g, "+"); void 0
 
 ```
- Gmail This
+
+**Gmail This**
 
 For emailing a link to the page you are currently viewing, the Gmail This bookmarklet is ideal. If you are logged in to Google, you will receive a pop-up of your Gmail. The page title is in the subject line and the URL is within the body of the email.
 
@@ -26,7 +27,7 @@ modified version of following page
 https://www.makeuseof.com/tag/10-ingenious-bookmarklets-to-make-you-a-google-power-user/
 
 
- QR This
+**QR This**
 
 Add this to your bookmarks:
 ```
@@ -44,14 +45,14 @@ javascript: (function() {
     js.src = "js_URL"
 })();
 ```
-  NightView
+**NightView**
 
 
 ```
 javascript:(function () { var css = 'html {-webkit-filter: invert(100%);' + '-moz-filter: invert(100%);' + '-o-filter: invert(100%);' + '-ms-filter: invert(100%); } img {-webkit-filter: invert(100%);' + '-moz-filter: invert(100%);' + '-o-filter: invert(100%);' + '-ms-filter: invert(100%); } video {-webkit-filter: invert(100%);' + '-moz-filter: invert(100%);' + '-o-filter: invert(100%);' + '-ms-filter: invert(100%); } html { background-color: transparent; }'; var head = document.getElementsByTagName('head')[0]; var style = document.createElement('style'); if (!window.counter) { window.counter = 1; } else { window.counter++; if (window.counter % 2 == 0) { var css = 'html{-webkit-filter:invert(0%);-moz-filter:invert(0%);-o-filter:invert(0%);-ms-filter:invert(0%);}img{-webkit-filter:invert(0%);-moz-filter:invert(0%);-o-filter:invert(0%);-ms-filter:invert(0%);}video{-webkit-filter:invert(0%);-moz-filter:invert(0%);-o-filter:invert(0%);-ms-filter:invert(0%);}html{background-color:transparent;}' } } style.type = 'text/css'; if (style.styleSheet) { style.styleSheet.cssText = css; } else { style.appendChild(document.createTextNode(css)); } head.appendChild(style); document.body.style.backgroundColor='#111'; }());
 ```
 
- Bookmarklet to clip webpages to google docs
+**Clip webpages to google docs, in specific Drive folder*
 
 
 Just create a new bookmark and make the text below (starting with javascript:) the URL of the bookmark.  Note that you will need to replace the "YOUR FOLDER ID HERE" string with the actual google docs folder ID you want to use. 
@@ -63,7 +64,7 @@ javascript:(function(){var folder="YOUR FOLDER ID HERE"; var text=""; if(window.
 ```
 
 
- Pipe it
+**Pipe it**
  
  (note: on Firefox you can use this extension: https://github.com/TeamPiped/Piped-Redirects)
 
@@ -88,7 +89,7 @@ void(0);
 
 ```
 
-Blum (Bookmarks popover) - variation based of https://blummy.com
+**Blum (Bookmarks popover)** - variation based of https://blummy.com
 The libray has been simplified and put inside this repository: https://cdn.rawgit.com/adegard/usefull_bookmarklets/main/blum2.js
 
 ```
