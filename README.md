@@ -120,6 +120,15 @@ Selected text TTS
 javascript:(function()%7Bvar%20e%3Dnew%20SpeechSynthesisUtterance(window.getSelection())%3B%20speechSynthesis.speak(e)%3B%7D)()%3B
 ```
 
+
+**Readibilityt**
+
+Terminal style
+https://github.com/anoved/mcreadability
+
+```
+javascript:(function(){readConvertLinksToFootnotes=true;readStyle='style-terminal';readSize='size-medium';readMargin='margin-medium';mcr_script=document.createElement('SCRIPT');mcr_script.type='text/javascript';mcr_script.src='//anoved.github.io/mcreadability/readability.js?x='+(Math.random());document.getElementsByTagName('head')[0].appendChild(mcr_script);mcr_stylesheet=document.createElement('LINK');mcr_stylesheet.rel='stylesheet';mcr_stylesheet.href='//anoved.github.io/mcreadability/mcreadability.css';mcr_stylesheet.type='text/css';mcr_stylesheet.media='all';document.getElementsByTagName('head')[0].appendChild(mcr_stylesheet);s=document.createElement('SCRIPT');s.type='text/javascript';s.src='//anoved.github.io/mcreadability/scroll-converter.js';if (s.addEventListener) {s.addEventListener('load',function(){scrollConverter.activate();});} else if (s.readyState) {s.onreadystatechange = function(){scrollConverter.activate();};} else {s.onload = function(){scrollConverter.activate();};};document.getElementsByTagName('head')[0].appendChild(s);})();
+```
 **Other links:**
 
 https://codepen.io/bookmarklets/pen/NobJbq
