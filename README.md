@@ -121,7 +121,7 @@ javascript:(function()%7Bvar%20e%3Dnew%20SpeechSynthesisUtterance(window.getSele
 ```
 
 
-**Readibilityt**
+**Readibility**
 
 Terminal style
 https://github.com/anoved/mcreadability
