@@ -11,6 +11,30 @@ Copy the text below into your bookmark URL (be sure to substitute your folder ID
 ```
 javascript:(function(){var folder="YOUR FOLDER ID HERE"; var text=""; if(window.getSelection){text=window.getSelection().toString();}else if(document.selection && document.selection.type!="Control"){text=document.selection.createRange().text;}if(prompt("Press Ctrl+C, Enter", "Tags: \n\n"+location.href+"\n\n"+document.title+"\n\n"+text)) window.open('https://docs.google.com/document/create?usp=drive_web&folder='+folder+'&title='+encodeURIComponent(document.title))})()
 ```
+**Password Generator**
+
+see https://stackoverflow.com/questions/1497481/javascript-password-generator#1497512
+
+
+```
+javascript:(
+  function(){
+  const regx = new RegExp(/\d/, "g");
+    prompt('Here is your shiny new random string:', 
+      window.crypto.getRandomValues(new BigUint64Array(4)).reduce(
+(prev, curr, index) => (
+        !index ? prev : prev.toString(36)
+    ) + (
+        index % 2 ? curr.toString(36).toUpperCase().replace(regx, key => ".,:;-_()=*".charAt(key)) : curr.toString(36)
+    )
+      ).split('').sort(() => 128 -
+        window.crypto.getRandomValues(new Uint8Array(1))[0]
+      ).join('')
+    );
+  }
+)();
+```
+
 
 
 **Remove Paywall**
