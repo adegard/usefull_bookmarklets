@@ -179,4 +179,7 @@ javascript:(function(){readConvertLinksToFootnotes=true;readStyle='style-termina
 **Other links:**
 
 https://codepen.io/bookmarklets/pen/NobJbq
+
 https://caiorss.github.io/bookmarklets
+
+
