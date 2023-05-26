@@ -141,7 +141,7 @@ void(0);
 The libray has been simplified and put inside this repository: https://cdn.rawgit.com/adegard/usefull_bookmarklets/main/blum2.js
 
 ```
-javascript:(function()%7Bjavascript%3A%20%3B%0A(function()%20%7B%0A%20%20%20%20var%20l%2C%20s%2C%20d%20%3D%20document%2C%0A%20%20%20%20%20%20%20%20i%2C%20a%20%3D%20function(o)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20d.body.appendChild(o)%0A%20%20%20%20%20%20%20%20%7D%3B%0A%20%20%20%20if%20(d.getElementById('blummy'))%20return%20Blummy.close()%3B%0A%20%20%20%20s%20%3D%20d.createElement('script')%3B%0A%20%20%20%20s.type%20%3D%20'text%2Fjavascript'%3B%0A%20%20%20%20s.src%20%3D%20'https%3A%2F%2Fcdn.rawgit.com%2Fadegard%2Fusefull_bookmarklets%2Fmain%2Fblum2.js'%3B%0A%20%20%20%20a(s)%0A%7D)()%3B%7D)()%3B
+javascript:(function()%7Bjavascript%3A%20%3B(function()%20%7Bvar%20l%2C%20s%2C%20d%20%3D%20document%2Ci%2C%20a%20%3D%20function(o)%20%7Bd.body.appendChild(o)%7D%3Bif%20(d.getElementById('blummy'))%20return%20Blummy.close()%3Bs%20%3D%20d.createElement('script')%3Bs.type%20%3D%20'text%2Fjavascript'%3Bs.src%20%3D%20'https%3A%2F%2Fraw.githubusercontent.com%2Fadegard%2Fusefull_bookmarklets%2Fmain%2Fblum2.js'%3Ba(s)%7D)()%7D)()
 ```
 which is identical to:
 ```
@@ -154,7 +154,7 @@ javascript: ;
     if (d.getElementById('blummy')) return Blummy.close();
     s = d.createElement('script');
     s.type = 'text/javascript';
-    s.src = 'https://cdn.rawgit.com/adegard/usefull_bookmarklets/main/blum2.js';
+    s.src = 'https://raw.githubusercontent.com/adegard/usefull_bookmarklets/main/blum2.js';
     a(s)
 })();
 ```
