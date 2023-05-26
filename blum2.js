@@ -98,7 +98,7 @@ div.style.right = "2px";
 div.style.top = "0px";
 div.appendChild(a);
 this.div.appendChild(div);
-this.div.style.height = '130px';
+this.div.style.height = '330px';
 this.div.style.width = '362px';
 this.div.id = 'blummy';
 var w = (document.all) ? document.body.offsetWidth : window.innerWidth;
