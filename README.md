@@ -1,5 +1,13 @@
 # Usefull bookmarklets
 
+**Bookmarklet to get JS panel with other Bookmarklets**
+
+Just create a new bookmark and make the text below (starting with javascript:) the URL of the bookmark.  
+
+```
+javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://adegard.github.io/markdown-cv/media/commandpanel.js' })();
+```
+
 **Bookmarklet to clip webpages to google docs**
 
 (modified version of: https://gist.github.com/jbrown123/4c768495b21b03d5529f26ccd83bf69f)
