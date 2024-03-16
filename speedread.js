@@ -1,4 +1,4 @@
-javascript: (function() {
+
     function e(a, b) {
         var c = document.createElement("div");
         if (a)
@@ -199,4 +199,4 @@ javascript: (function() {
         document.addEventListener("keypress", x);
         r()
     }
-})();
+
