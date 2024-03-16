@@ -115,7 +115,7 @@ javascript: (function() {
             zIndex: -1
         },
         g = {
-            background: "white",
+            background: "black",
             display: "table",
             width: "70%25",
             height: "70%25",
@@ -153,21 +153,21 @@ javascript: (function() {
             top: "1em",
             right: "1em",
             font: "12pt%20sans-serif",
-            color: "#888"
+            color: "white"
         },
         R = {
             position: "absolute",
             bottom: "12pt",
             left: "1em",
             font: "12pt%20sans-serif",
-            color: "#888"
+            color: "white"
         },
         k = {
             position: "absolute",
             bottom: "12pt",
             right: "1em",
             font: "12pt%20sans-serif",
-            color: "#888"
+            color: "white"
         },
         c = function(a) {
             return %20 a.split(N).filter(function(a) {
@@ -191,7 +191,7 @@ javascript: (function() {
                 45: M,
                 46: I
             }, k = 0; 10 > k; ++k) z[48 + k] = p.bind(null, 0 < k ? 100 * k : 1E3);
-        p(500);
+        p(250);
         t.addEventListener("click", w);
         g.addEventListener("click", B);
         document.body.appendChild(n);
