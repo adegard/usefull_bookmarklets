@@ -36,4 +36,10 @@ fetchData(); setInterval(fetchData, 120000);
 /**
 use https://caiorss.github.io/bookmarklet-maker/
 to convert it in bookmarklet-maker/
+
+
+Notify if new items in feed Copper
+1. open https://app.copper.com/companies/<comany number>/app#/feed
+2. activate bookmarklet
+
 */
