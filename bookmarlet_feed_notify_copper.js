@@ -17,34 +17,24 @@ async function fetchData() {
 	console.log(record);
 	var subject = record.logs[0].target.subject;
 	
-	if(localStorage.getItem('lastfeedCopper')==undefined){
+	if(localStorage.getItem('lastfeedCopper')==undefined || subject==undefined){
 			localStorage.setItem('lastfeedCopper', subject);
-			alert(subject);
+			//alert(subject);
 		}else{
 		if(localStorage.getItem('lastfeedCopper')==subject){
 			console.log("same one");
 			}else{
-			localStorage.setItem('lastfeedCopper', subject)
-			console.log("updated");
-			alert(subject);
-				//add sound (UNCOMMMENT)
-				/* var audio = new Audio('https://adegard.github.io/markdown-cv/media/mixkit-cooking-stopwatch-alert-1792.wav');
+				localStorage.setItem('lastfeedCopper', subject)
+				console.log("updated");
+				alert(subject);
+				//add sound
+ 					var audio = new Audio('https://adegard.github.io/markdown-cv/media/mixkit-cooking-stopwatch-alert-1792.wav');
 					audio.addEventListener('canplay', () =>{
 						audio.play();
-					}); */
+					}); 
+			
 			}
 	}
 }
 
 fetchData(); setInterval(fetchData, 120000);
-
-/**
-use https://caiorss.github.io/bookmarklet-maker/
-to convert it in bookmarklet-maker/
-
-
-Notify if new items in feed Copper
-1. open https://app.copper.com/companies/<comany number>/app#/feed
-2. activate bookmarklet
-
-*/
