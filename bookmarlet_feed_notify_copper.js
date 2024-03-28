@@ -15,7 +15,12 @@ async function fetchData() {
 
    const record =await res.json();
 	console.log(record);
-	var subject = record.logs[0].target.subject;
+	
+	if(record.logs[0].target ==null){
+		var subject = undefined;
+		}else{
+		var subject = record.logs[0].target.subject;
+	}
 	
 	if(localStorage.getItem('lastfeedCopper')==undefined || subject==undefined){
 			localStorage.setItem('lastfeedCopper', subject);
