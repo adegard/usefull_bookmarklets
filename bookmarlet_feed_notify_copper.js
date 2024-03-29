@@ -6,7 +6,6 @@ async function fetchData() {
 						"Access-Control-Allow-Methods": "GET,POST,OPTIONS,DELETE,PUT",
 						 "mode": "no-cors",
 						  "Access-Control-Allow-Origin": "*"
-					/* 	   "Referrer-Policy": "strict-origin-when-cross-origin" */
 					},
 					  "body": null,
 					  "method": "GET"
@@ -14,7 +13,6 @@ async function fetchData() {
 		)
 
    const record =await res.json();
-	console.log(record);
 	
 	if(record.logs[0].target ==null){
 		var subject = undefined;
@@ -24,7 +22,7 @@ async function fetchData() {
 	
 	if(localStorage.getItem('lastfeedCopper')==undefined || subject==undefined){
 			localStorage.setItem('lastfeedCopper', subject);
-			//alert(subject);
+			console.log("not an email");
 		}else{
 		if(localStorage.getItem('lastfeedCopper')==subject){
 			console.log("same one");
@@ -37,9 +35,10 @@ async function fetchData() {
 					audio.addEventListener('canplay', () =>{
 						audio.play();
 					}); 
-			
+				//change tab title
+				window.document.title= record.logs[0].source.name;
 			}
 	}
 }
 
-fetchData(); setInterval(fetchData, 120000);
+fetchData(); setInterval(fetchData, 180000);
