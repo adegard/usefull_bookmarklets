@@ -29,7 +29,6 @@ async function fetchData() {
 			}else{
 				localStorage.setItem('lastfeedCopper', subject)
 				console.log("updated");
-				alert(subject);
 				//add sound
  					var audio = new Audio('https://adegard.github.io/markdown-cv/media/mixkit-cooking-stopwatch-alert-1792.wav');
 					audio.addEventListener('canplay', () =>{
@@ -37,8 +36,20 @@ async function fetchData() {
 					}); 
 				//change tab title
 				window.document.title= record.logs[0].source.name;
+				alert(subject);
 			}
 	}
 }
 
 fetchData(); setInterval(fetchData, 180000);
+
+/**
+use https://caiorss.github.io/bookmarklet-maker/
+to convert it in bookmarklet-maker/
+
+
+Notify if new items in feed Copper
+1. open https://app.copper.com/companies/<comany number>/app#/feed
+2. activate bookmarklet
+
+*/
