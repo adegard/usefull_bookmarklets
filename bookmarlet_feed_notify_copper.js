@@ -27,7 +27,8 @@ async function fetchData() {
 		if(localStorage.getItem('lastfeedCopper')==subject){
 			console.log("same one");
 			}else{
-				localStorage.setItem('lastfeedCopper', subject)
+				localStorage.setItem('lastfeedCopper', subject);
+				window.location.href = 'https://app.copper.com/companies/190749/app#/feed';
 				console.log("updated");
 				//add sound
  					var audio = new Audio('https://adegard.github.io/markdown-cv/media/mixkit-cooking-stopwatch-alert-1792.wav');
