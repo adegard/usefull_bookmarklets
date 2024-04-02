@@ -19,17 +19,22 @@ async function fetchData() {
 		}else{
 		var subject = record.logs[0].target.subject;
 	}
+	var d = new Date();
+	 
 	
 	if(localStorage.getItem('lastfeedCopper')==undefined || subject==undefined){
 			localStorage.setItem('lastfeedCopper', subject);
 			console.log("not an email");
+			document.getElementsByClassName("feed-welcome_title")[0].innerHTML="not an email "+d.toLocaleString();
 		}else{
 		if(localStorage.getItem('lastfeedCopper')==subject){
 			console.log("same one");
+			document.getElementsByClassName("feed-welcome_title")[0].innerHTML="same one "+d.toLocaleString();
 			}else{
 				localStorage.setItem('lastfeedCopper', subject);
 				window.location.href = 'https://app.copper.com/companies/190749/app#/feed';
 				console.log("updated");
+				document.getElementsByClassName("feed-welcome_title")[0].innerHTML="updated at "+d.toLocaleString();
 				//add sound
  					var audio = new Audio('https://adegard.github.io/markdown-cv/media/mixkit-cooking-stopwatch-alert-1792.wav');
 					audio.addEventListener('canplay', () =>{
@@ -37,7 +42,8 @@ async function fetchData() {
 					}); 
 				//change tab title
 				window.document.title= record.logs[0].source.name;
-				alert(subject);
+	
+				//alert(subject);
 			}
 	}
 }
